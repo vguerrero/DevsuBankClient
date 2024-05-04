@@ -2,19 +2,23 @@ package com.bank.client.BankClient.model;
 
 import jakarta.persistence.*;
 
-@Entity
-@Table(name="person")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+//@Entity
+//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@MappedSuperclass
+//@Table(name="person")
 public class Person {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String name;
     private Genre genre;
     private int age;
+
+    @Column(unique=true)
     private int identification;
+
     private String address;
     private String phone;
 

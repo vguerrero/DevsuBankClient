@@ -1,8 +1,10 @@
 package com.bank.client.BankClient.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="client")
 public class Client extends Person{
 
     private String clientId;
