@@ -17,7 +17,7 @@ public class Person {
     private int age;
 
     @Column(unique=true)
-    private int identification;
+    private String identification;
 
     private String address;
     private String phone;
@@ -54,11 +54,11 @@ public class Person {
         this.age = age;
     }
 
-    public int getIdentification() {
+    public String getIdentification() {
         return identification;
     }
 
-    public void setIdentification(int identification) {
+    public void setIdentification(String identification) {
         this.identification = identification;
     }
 

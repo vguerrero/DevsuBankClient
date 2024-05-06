@@ -7,19 +7,12 @@ import jakarta.persistence.Table;
 @Table(name="client")
 public class Client extends Person{
 
-    private String clientId;
 
     private String password;
 
     private boolean state;
 
-    public String getClientId() {
-        return clientId;
-    }
 
-    public void setClientId(String clientId) {
-        this.clientId = clientId;
-    }
 
     public String getPassword() {
         return password;
@@ -40,8 +33,8 @@ public class Client extends Person{
     @Override
     public String toString() {
         return "Client{" +
-                "clientId='" + clientId + '\'' +
-                ", password='" + password + '\'' +
+                "id='" + super.getId() + '\'' +
+                "getIdentification='" + super.getIdentification() + '\'' +
                 ", state=" + state +
                 '}';
     }

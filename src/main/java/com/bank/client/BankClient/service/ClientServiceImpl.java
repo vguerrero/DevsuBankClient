@@ -50,7 +50,6 @@ public class ClientServiceImpl implements ClientService{
     public Client updateClient(Client c) {
         Client f = repository.getById(c.getId());
         if(f != null){
-            f.setClientId(c.getClientId());
             f.setPassword(c.getPassword());
             f.setAge(c.getAge());
             f.setAddress(c.getAddress());
