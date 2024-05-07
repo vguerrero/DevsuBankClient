@@ -2,16 +2,12 @@ package com.bank.client.BankClient.unittest.services;
 
 import com.bank.client.BankClient.data.TestData;
 import com.bank.client.BankClient.model.Client;
-import com.bank.client.BankClient.model.Genre;
 import com.bank.client.BankClient.repository.ClientRepository;
 import com.bank.client.BankClient.service.ClientService;
 import com.bank.client.BankClient.service.ClientServiceImpl;
 import com.bank.client.BankClient.service.RabbitMqSender;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Optional;
-
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
